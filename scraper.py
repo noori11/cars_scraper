@@ -3,7 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 import time 
 
-cvr_numre = [69749917]
 
 
 # class OurScraper: 
@@ -14,20 +13,26 @@ cvr_numre = [69749917]
 #     def scrape_cvr(self, cvr):
     
 
-url = "https://filingaccess.serff.com/sfa/home/insurancecompact"
+cvr_numre = 69749917
+
+
+url = "https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id={cvr_numre}&soeg={cvr_numre}&language=da"
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser') 
-links = soup.find_all('a')
-print("Total amount of links found:",len(links))
 
-link_list = []
+mydivs = soup.find_all("div", {"class": "cvrreg"})
+# links = soup.find_all('a')
+print(mydivs)
+print("Total amount of links found:",len(mydivs))
 
-for link in links:
-    if ('.pdf' in link.get('href')):
-        filelink = link.get('href')
+# link_list = []
 
-print(filelink)
+# for link in links:
+#     if ('.pdf' in link.get('href')):
+#         filelink = link.get('href')
 
-response = requests.get(filelink) 
+# print(filelink)
 
-open('test.pdf', 'wb').write(response.content)
+# response = requests.get(filelink) 
+
+# open('test.pdf', 'wb').write(response.content)
