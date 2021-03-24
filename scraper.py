@@ -20,5 +20,14 @@ soup = BeautifulSoup(response.text, 'html.parser')
 links = soup.find_all('a')
 print("Total amount of links found:",len(links))
 
+link_list = []
 
-print(links)
+for link in links:
+    if ('.pdf' in link.get('href')):
+        filelink = link.get('href')
+
+print(filelink)
+
+response = requests.get(filelink) 
+
+open('test.pdf', 'wb').write(response.content)
