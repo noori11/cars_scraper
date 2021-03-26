@@ -1,19 +1,28 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
 
-driver = webdriver.Chrome()
-driver.get("https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id=69749917&soeg=69749917&language=da")
+# 1) Meget af teksten er dannet på baggrund af kald fra API'er, 
+# det gør det umuligt at scrape uden at danne en DOM. 
+# 2) Automatiseringen skal forgå enten vha. selenium, pyppeter eller lign.  
 
-elem1 = driver.find_element_by_class_name("cpAcceptBtn")
-if elem1:
-    elem1.click()
+r = scrapy.Request(url="https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id=69749917&soeg=coloplast&type=undefined&language=da")
 
-elem = driver.find_element_by_link_text("Regnskaber")
-
-elem.click()
+fetch(r)
+aarsrapport = response.xpath("//*[@id='collapse_-Regnskaber-og-nogletal']/div[1]/div[2]")
+aarsrapport.get()
 
 
-#collapse_-Regnskaber-og-nogletal > div.accordion-inner > div.aktive-regnskaber > div:nth-child(1) > div > div:nth-child(8) > div.col-sm-5.regnskabs-download > a
-document.querySelector("#collapse_-Regnskaber-og-nogletal > div.accordion-inner > div.aktive-regnskaber > div:nth-child(3) > div > div:nth-child(7) > div.col-sm-5.regnskabs-download > a")
-document.querySelector("#collapse_-Regnskaber-og-nogletal > div.accordion-inner > div.aktive-regnskaber > div:nth-child(1) > div > div:nth-child(6) > div.col-sm-5.regnskabs-download > a")
+
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[1]
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[3]
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[5]
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[7]
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[9]
+
+
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[1]
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[3]
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[5]
+
+
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[1]
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[3]
+//*[@id="collapse_-Regnskaber-og-nogletal"]/div[1]/div[2]/div[5]
