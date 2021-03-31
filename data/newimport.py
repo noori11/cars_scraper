@@ -1,0 +1,26 @@
+import requests
+
+url = "https://s3.eu-de.objectstorage.softlayer.net/cars-test-bucket/testfile2.txt"
+
+payload = "This is another test data for the text fil3e."
+headers = {
+  'Content-Type': 'application/x-www-form-urlencoded',
+  'x-amz-tagging': 'new_tag',
+  'Authorization': 'Bearer eyJraWQiOiIyMDIxMDMyMTE4MzUiLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC02NjYwMDA3U0pXIiwiaWQiOiJJQk1pZC02NjYwMDA3U0pXIiwicmVhbG1pZCI6IklCTWlkIiwic2Vzc2lvbl9pZCI6IkMtOWI5ZjI0ZWMtNDUzNy00M2RjLTliMDktODkzNGVmYzUwYWM0IiwianRpIjoiNjhkYTJhMjEtZTkzNy00YTg3LTlkMTItZWVlODIzYTU0MGQwIiwiaWRlbnRpZmllciI6IjY2NjAwMDdTSlciLCJnaXZlbl9uYW1lIjoiUGFyd2V6IiwiZmFtaWx5X25hbWUiOiJOb29yaSIsIm5hbWUiOiJQYXJ3ZXogTm9vcmkiLCJlbWFpbCI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSIsInN1YiI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSIsImF1dGhuIjp7InN1YiI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSIsImlhbV9pZCI6IklCTWlkLTY2NjAwMDdTSlciLCJuYW1lIjoiUGFyd2V6IE5vb3JpIiwiZ2l2ZW5fbmFtZSI6IlBhcndleiIsImZhbWlseV9uYW1lIjoiTm9vcmkiLCJlbWFpbCI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSJ9LCJhY2NvdW50Ijp7InZhbGlkIjp0cnVlLCJic3MiOiJkNjRiNDU0OTczN2M0NjM2OGIxNjYyNDNhYWFhM2EyZiJ9LCJpYXQiOjE2MTcxODk2NDIsImV4cCI6MTYxNzE5MDg0MiwiaXNzIjoiaHR0cHM6Ly9pYW0uY2xvdWQuaWJtLmNvbS9pZGVudGl0eSIsImdyYW50X3R5cGUiOiJ1cm46aWJtOnBhcmFtczpvYXV0aDpncmFudC10eXBlOnBhc3Njb2RlIiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiYngiLCJhY3IiOjEsImFtciI6WyJwd2QiXX0.XFws38rv2VENta7bF4uWgReXmBdhhgkhwbNmkobYwxile4BDCwze-ozkx7ZZC80mTdwGxYf_15gkZT8t78UeiG0LJ-GM1knAEFG4mem8gL0_bgQ-W0H8l4qHk3xX-obI00DNbdXiC6aezrY_7DkvgTJnCqlOq2rKHQPD3j3ZV67LUhdU4ZSXwpCnn4nwNyF8uc056ru-KdBIwvkWu-giS0_Bx_66w8Jgweh4qFHfohe0nKeI3xVAgnIlScO4DGIgLZRLxETemGojgrNPSRi7unffue8Uz5GfyK8ySsjuJfTBSKWKMJ3utyZZgR_Nh9QKNXyYZmbgCySZb25trlWAZA'
+}
+
+response = requests.request("PUT", url, headers=headers, data=payload)
+
+print(response.text)
+
+
+"""
+Bucket 1 (PDF): 
+1.cvr_dato.pdf, tag=?  
+2.
+
+
+Bucket 2 (XBRL): 
+1. cvr_dato.xbrl, tag=?
+
+"""
