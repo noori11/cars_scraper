@@ -46,7 +46,7 @@ def uploadfiles():
             headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
             'x-amz-tagging': 'Type=pdf',
-            'Authorization': 'Bearer eyJraWQiOiIyMDIxMDMyMTE4MzUiLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC02NjYwMDA3U0pXIiwiaWQiOiJJQk1pZC02NjYwMDA3U0pXIiwicmVhbG1pZCI6IklCTWlkIiwic2Vzc2lvbl9pZCI6IkMtYzQyZWU3YWYtMzE2Yy00NjkwLTg5MmEtN2U3YzRlZjFhZjQ3IiwianRpIjoiZWE4NjgxODQtNGIzMS00NTk2LWI0YzQtZWNiOGFiYzM0ZWRlIiwiaWRlbnRpZmllciI6IjY2NjAwMDdTSlciLCJnaXZlbl9uYW1lIjoiUGFyd2V6IiwiZmFtaWx5X25hbWUiOiJOb29yaSIsIm5hbWUiOiJQYXJ3ZXogTm9vcmkiLCJlbWFpbCI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSIsInN1YiI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSIsImF1dGhuIjp7InN1YiI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSIsImlhbV9pZCI6IklCTWlkLTY2NjAwMDdTSlciLCJuYW1lIjoiUGFyd2V6IE5vb3JpIiwiZ2l2ZW5fbmFtZSI6IlBhcndleiIsImZhbWlseV9uYW1lIjoiTm9vcmkiLCJlbWFpbCI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSJ9LCJhY2NvdW50Ijp7InZhbGlkIjp0cnVlLCJic3MiOiJkNjRiNDU0OTczN2M0NjM2OGIxNjYyNDNhYWFhM2EyZiJ9LCJpYXQiOjE2MTc1Njc4ODAsImV4cCI6MTYxNzU2OTA4MCwiaXNzIjoiaHR0cHM6Ly9pYW0uY2xvdWQuaWJtLmNvbS9pZGVudGl0eSIsImdyYW50X3R5cGUiOiJ1cm46aWJtOnBhcmFtczpvYXV0aDpncmFudC10eXBlOnBhc3Njb2RlIiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiYngiLCJhY3IiOjEsImFtciI6WyJwd2QiXX0.MacgsoUx6rGjkQxcLvUHWqp7JGR7KH07PEgKA_sRlLlboAkoKN96DDkFJZOt0f54prUgYLgp3TimMnSolnwU8uzGAkXVd8p8bds5LZHt5oKX8PB-BVtTOAMI6G1cKs2HH2LlEsNjWx4dLIbhbuCOKAqpZRwvlg3cSZDqCm4Glfmx0hHMdTNB8neFot_ie_5lgWP5M_3WLyWZMxC_1bsiDAPJAqwhI2oUkDSvq-4qZjyx3VXh04DhoZca5pVEC4GBmZxMf8vFkGVr4dMYoqmhy8CmdO53_j0I9FmZBdHL54q-9_MZWxEOEC4AMx9lr0bishhbIZWlevRTyz8VuFlUwg'
+            'Authorization': 'Bearer _'
             }
             response = requests.request("PUT", url, headers=headers, files=files)
             files['file'].close()
