@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c15675bd-9bbd-4df2-8e22-f1fe881e08b8",
+		"_postman_id": "24f5660e-c139-4765-a33d-33ae8b9ca475",
 		"name": "IBM COS",
 		"description": "IBM COS samples",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -1126,33 +1126,29 @@
 	"variable": [
 		{
 			"key": "bucket",
-			"value": "jsaitocosbucketapitest41",
-			"type": "string"
+			"value": "cars-data"
 		},
 		{
 			"key": "serviceid",
-			"value": "crn:v1:bluemix:public:cloud-object-storage:global:a/1d524cd94a0dda86fd8eff3191340732:8888b05b-a143-4917-9d8e-9d5b326a1604::",
-			"type": "string"
+			"value": "crn:v1:bluemix:public:cloud-object-storage:global:a/d64b4549737c46368b166243aaaa3a2f:395e4e8c-1e9a-4010-abf9-7c74db93a467::"
 		},
 		{
 			"key": "iamtoken",
-			"value": "eyJraWQiOiIyMDE3MTAzMC0wMDowMDowMCIsImFsZyI6IlJTMjU2In0.eyJpYW1faWQiOiJJQk1pZC01MFkxNjdNOFRZIiwiaWQiOiJJQk1pZC01MFkxNjdNOFRZIiwicmVhbG1pZCI6IklCTWlkIiwiaWRlbnRpZmllciI6IjUwWTE2N004VFkiLCJnaXZlbl9uYW1lIjoiSmFtZXMiLCJmYW1pbHlfbmFtZSI6IlNhaXRvIiwibmFtZSI6IkphbWVzIFNhaXRvIiwiZW1haWwiOiJKYW1lcy5TYWl0bzFAaWJtLmNvbSIsInN1YiI6IkphbWVzLlNhaXRvMUBpYm0uY29tIiwiYWNjb3VudCI6eyJic3MiOiIxZDUyNGNkOTRhMGRkYTg2ZmQ4ZWZmMzE5MTM0MDczMiJ9LCJpYXQiOjE1Mjg2MDk0ODIsImV4cCI6MTUyODYxMzA4MiwiaXNzIjoiaHR0cHM6Ly9pYW0uYmx1ZW1peC5uZXQvaWRlbnRpdHkiLCJncmFudF90eXBlIjoidXJuOmlibTpwYXJhbXM6b2F1dGg6Z3JhbnQtdHlwZTphcGlrZXkiLCJzY29wZSI6ImlibSBvcGVuaWQiLCJjbGllbnRfaWQiOiJieCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.iG5ey13QlXHu3OH81v8J5sduKv3NzSqCFng_DlpNglPo07K-nWst3O9o6iEJfm0AzJwYNTZqWVru1pjI-KcAPXFBe503DPIf6cYolAw4rarU5booW-pdzk8-R5HZ7MJK7b8sxJtm7PAilXVZvl5yFE-tJsFkeMH6XCIj_R9i6dwSemDBL3Juq79_x3KsgJGFg37p5f2vck1_7gR7nSb03m8m3mCvrrx7zGkLDuM8NXAVlwwxKcitwlG_UfEBwSbX3krF04zF2tFCpGkcWAnuaFdaVTOL6uaULxCi5BWHqzLXIPhAoyfnVGNv0TBJtyFcpJ1LdlsBmz7RS2fROlDf2w",
-			"type": "string"
+			"value": "eyJraWQiOiIyMDIxMDMyMTE4MzUiLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC02NjYwMDA3U0pXIiwiaWQiOiJJQk1pZC02NjYwMDA3U0pXIiwicmVhbG1pZCI6IklCTWlkIiwic2Vzc2lvbl9pZCI6IkMtZDE2OTMwYzUtY2M3MS00ODk0LTk5MTItOTcwNDZjMTY0MTU4IiwianRpIjoiNmQ1ZWE0YzgtNmI3MS00N2E5LTg4NmUtMzMzOTJiNmYxNjRlIiwiaWRlbnRpZmllciI6IjY2NjAwMDdTSlciLCJnaXZlbl9uYW1lIjoiUGFyd2V6IiwiZmFtaWx5X25hbWUiOiJOb29yaSIsIm5hbWUiOiJQYXJ3ZXogTm9vcmkiLCJlbWFpbCI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSIsInN1YiI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSIsImF1dGhuIjp7InN1YiI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSIsImlhbV9pZCI6IklCTWlkLTY2NjAwMDdTSlciLCJuYW1lIjoiUGFyd2V6IE5vb3JpIiwiZ2l2ZW5fbmFtZSI6IlBhcndleiIsImZhbWlseV9uYW1lIjoiTm9vcmkiLCJlbWFpbCI6IlBhcndlei5Ob29yaS1DSUNAaWJtLmNvbSJ9LCJhY2NvdW50Ijp7InZhbGlkIjp0cnVlLCJic3MiOiJkNjRiNDU0OTczN2M0NjM2OGIxNjYyNDNhYWFhM2EyZiJ9LCJpYXQiOjE2MTc4Njk0NTYsImV4cCI6MTYxNzg3MDY1NiwiaXNzIjoiaHR0cHM6Ly9pYW0uY2xvdWQuaWJtLmNvbS9pZGVudGl0eSIsImdyYW50X3R5cGUiOiJ1cm46aWJtOnBhcmFtczpvYXV0aDpncmFudC10eXBlOnBhc3Njb2RlIiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiYngiLCJhY3IiOjEsImFtciI6WyJwd2QiXX0.ga8t7sG9I6dXIipJrRfqN8P1SgoxrajVnt4uF8AvMbGWe91OWwIR7xsQgFfKsI-hZw3BdE6w6y1f6njRbocLalDc-d0VkbHuRtDh0v9VTmdIVyWzv9z8vJMDeE5s9-5kW_GpTVaEhU6d6Az_wkkRnsZz-8solc2cFmvCYlmmGIbWv8bdykDsuyciuvwZkcHxHe7V_KO3yXXwZcpptF83sBIkT1B7UKx-VyxTfB4GMvG-z_u4QyaVgLWJBph5O60KtqdORIkK850laXnnwGMddHacsD761NGN5Li7qYmyYh8VxTIkjNTHNvtSzoDSLyqeALKbAYJgqazmSrPYN-uoXA"
 		},
 		{
 			"key": "endpoint-region",
-			"value": "s3.us-south",
-			"type": "string"
+			"value": "s3.eu-de"
 		},
 		{
 			"key": "rootkeycrn",
 			"value": "crn:v1:bluemix:public:kms:us-south:a/1d524cd94a0dda86fd8eff3191340732:90b7a1db-0fe2-4de9-b90e-922c127ff530:key:0b43e36e-a863-40e2-b713-5caa2bf99288",
-			"type": "string"
+			"disabled": true
 		},
 		{
 			"key": "bucketlocationvault",
 			"value": "us-south-vault",
-			"type": "string"
+			"disabled": true
 		}
 	]
 }
